@@ -1,0 +1,28 @@
+body {
+text-align: center;
+background: rgba(200,150,100,.8);
+}
+header {
+background: rgba(200,150,100,1);
+}
+main {
+height: 600px;
+width: 600px;
+float:left;
+display:inline-block;
+}
+aside{
+height: 600px;
+width: 200px;
+float: right;
+display: inline-block;
+}
+footer {
+clear: both;
+}
+#struck {
+	text-decoration: line-through;
+}
+#italic {
+	font-style: italic;
+}
