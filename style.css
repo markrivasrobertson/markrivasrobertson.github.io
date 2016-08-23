@@ -1,24 +1,120 @@
 body {
-text-align: center;
-background: rgba(200,150,100,.8);
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	/*background: url(houndstooth.jpg);*/
+	background: rgba(60,80,160,.8);
+	/*background: url(background.jpg);*/
+	background-size: cover;
+	color: rgba(210,195,195,.8);
 }
 header {
-background: rgba(200,150,100,1);
+	background: rgba(0,0,0,.5);
+	margin-bottom: 20px;
+	height: 100px;
+	border-radius: 7px;
+}
+a {
+	color: rgba(210,195,195,.8);
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
 }
 main {
-height: 600px;
-width: 600px;
-float:left;
-display:inline-block;
+	height: 600px;
+	width: 75%;
+	float:left;
+	clear:both;
+	background: rgba(0,0,0,.35);
+	border-radius: 7px;
+	margin-bottom: 20px;
 }
-aside{
-height: 600px;
-width: 200px;
-float: right;
-display: inline-block;
+.dropDown {
+	padding: 20px;
+	width: 90%;
+	height: 50px;
+	font-size: 20px;
+	border: none;
+	margin: 0 auto;
+	clear: both;
+}
+
+.dropDownContent {
+	display: none;
+	margin: 0 auto;
+}
+
+.dropDown:hover {
+	height: 175px;
+	background: rgba(0,0,0,.5);
+	border-radius: 7px;
+}
+
+.dropDown:hover .dropDownContent {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.dropDown:hover .dropDownContent div {
+	display: inline-block;
+	margin: 0 auto;
+	width: 40%;
+	height: 60px;
+	padding: 25px 0 0 25px;
+}
+/*ul {
+	list-style: none;
+	text-align: center;
+}
+li {
+	padding: 30px;
+}
+li:hover {
+	font-style: italic;
+}*/
+#mugshot {
+	height:245px; 
+	width:100%;
+	background: url(Mark_Image.jpg);
+	background-size: cover;
+	float: right;
+	border-radius: 7px 7px 0 0	;
+	margin-bottom: 10px;
+}
+#asideInfo {
+	height: 350px;
+	width: 95%;
+	padding: 5px;
+}
+aside {
+	color: rgba(0,0,0,.7);
+	height: 600px;
+	width: 23%;
+	float: right;
+	clear: right;
+	background: rgba(215,195,195,.3);
+	border-radius: 7px;
 }
 footer {
-clear: both;
+	clear: both;
+	height: 75px;
+	text-align: center;
+	margin-top: 20px;
+	background: rgba(0,0,0,.5);
+	border-radius: 7px;
+	padding: 15px;
+}
+#name {
+	float: left;
+	margin: 20px, 0;
+	padding: 25px;
+	font-size: 40px;
+}
+#contact {
+	float: right;
+	margin: 20px, 0;
+	padding: 25px;
+	text-align: right;
 }
 #struck {
 	text-decoration: line-through;
