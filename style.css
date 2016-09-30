@@ -1,33 +1,53 @@
 body {
 	text-align: center;
 	font-family: 'Oswald', sans-serif;
-	/*background: url(houndstooth.jpg);*/
-	background: rgba(60,80,160,.8);
-	/*background: url(background.jpg);*/
+	background: rgba(200,200,215,.8);
 	background-size: cover;
-	color: rgba(210,195,195,.8);
+	color: rgba(100,95,115,.8);
 }
 header {
-	background: rgba(0,0,0,.5);
-	margin-bottom: 20px;
-	height: 100px;
+	position: relative;
+	/*background: rgba(0,0,0,.5);*/
+	margin: .5em auto;
+	height: 3.5em;
+	width: 95%;
+	border-radius: 3px 3px 0 0;
+	padding: 1em .25em;
+	box-sizing: border-box;
+}
+main {
+	height: 30rem;
+	width: 65%;
+	float:left;
+	clear:both;
+	/*background: rgba(0,0,0,.07);*/
 	border-radius: 7px;
+	margin: 2rem;
+}
+#headerContainer {
+	position: relative;
+	width: 100%
+}
+#name {
+	position: relative;
+	float: left;
+	font-size: 2.1em;
+}
+#contact {
+	position: relative;
+	float: right;
+	text-align: right;
+	font-size: 1em;
+}
+h1 {
+	margin-bottom: 2rem;
 }
 a {
-	color: rgba(210,195,195,.8);
+	color: rgba(100,95,115,.8);
 	text-decoration: none;
 }
 a:hover {
 	text-decoration: underline;
-}
-main {
-	height: 600px;
-	width: 75%;
-	float:left;
-	clear:both;
-	background: rgba(0,0,0,.35);
-	border-radius: 7px;
-	margin-bottom: 20px;
 }
 .dropDown {
 	padding: 20px;
@@ -46,7 +66,7 @@ main {
 
 .dropDown:hover {
 	height: 175px;
-	background: rgba(0,0,0,.5);
+	background: rgba(0,0,0,.1);
 	border-radius: 7px;
 }
 
@@ -56,30 +76,22 @@ main {
 }
 
 .dropDown:hover .dropDownContent div {
+	margin: 1.25rem 0;
+	width: 50%;
+	height: 2rem;
+	padding: 1rem 0 0 1rem;
+	float: left;
 	display: inline-block;
-	margin: 0 auto;
-	width: 40%;
-	height: 60px;
-	padding: 25px 0 0 25px;
+	box-sizing: border-box;
 }
-/*ul {
-	list-style: none;
-	text-align: center;
-}
-li {
-	padding: 30px;
-}
-li:hover {
-	font-style: italic;
-}*/
 #mugshot {
-	height:245px; 
-	width:100%;
 	background: url(Mark_Image.jpg);
 	background-size: cover;
+	border-radius: 7px 7px 0 0;
+	margin-bottom: 1em auto;
+	height:245px;
+	width:100%;
 	float: right;
-	border-radius: 7px 7px 0 0	;
-	margin-bottom: 10px;
 }
 #asideInfo {
 	height: 350px;
@@ -87,38 +99,119 @@ li:hover {
 	padding: 5px;
 }
 aside {
-	color: rgba(0,0,0,.7);
-	height: 600px;
+	height: 30rem;
 	width: 23%;
 	float: right;
 	clear: right;
-	background: rgba(215,195,195,.3);
+	margin: 2rem;
 	border-radius: 7px;
 }
 footer {
-	clear: both;
 	height: 75px;
-	text-align: center;
 	margin-top: 20px;
-	background: rgba(0,0,0,.5);
+	/*background: rgba(0,0,0,.5);*/
 	border-radius: 7px;
 	padding: 15px;
+	clear: both;
 }
 #name {
-	float: left;
 	margin: 20px, 0;
 	padding: 25px;
 	font-size: 40px;
 }
 #contact {
-	float: right;
 	margin: 20px, 0;
 	padding: 25px;
 	text-align: right;
 }
-#struck {
-	text-decoration: line-through;
-}
-#italic {
-	font-style: italic;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 400px) {
+	.dropDown {
+		padding: 2em;
+		width: 90%;
+		height: 4em;
+		font-size: 2em;
+		border: none;
+		margin: 0 auto;
+		clear: both;
+		/*padding: 20px;
+		width: 90%;
+		height: 50px;
+		font-size: 20px;
+		border: none;
+		margin: 0 auto;
+		clear: both;*/
+	}
+
+	.dropDownContent {
+		display: none;
+		margin: 0 auto;
+	}
+
+	.dropDown:hover {
+		height: 175px;
+		/*background: rgba(0,0,0,.5);*/
+		border-radius: 7px;
+	}
+
+	.dropDown:hover .dropDownContent {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.dropDown:hover .dropDownContent div {
+		display: inline-block;
+		margin: 0 auto;
+		width: 40%;
+		height: 60px;
+		padding: 25px 0 0 25px;
+	}
+	#mugshot {
+
+	}
+	#asideInfo {
+		height: 350px;
+		width: 95%;
+		padding: 5px;
+	}
+	aside {
+		/*color: rgba(0,0,0,.7);*/
+		height: 600px;
+		width: 95%;
+		margin: 0 auto;
+		/*background: rgba(215,195,195,.3);*/
+		border-radius: 7px;
+	}
+	footer {
+		clear: both;
+		width: 95%;
+		height: 75px;
+		text-align: center;
+		margin: 1em auto;
+		/*background: rgba(0,0,0,.5);*/
+		border-radius: 0 0 7px 7px;
+	}
+	#struck {
+			text-decoration: line-through;
+		}
+	#italic {
+		font-style: italic;
+	}
 }
