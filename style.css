@@ -1,9 +1,9 @@
 body {
 	text-align: center;
 	font-family: 'Oswald', sans-serif;
-	background: rgba(200,200,215,.8);
+	color: rgba(200,200,215,.8);
 	background-size: cover;
-	color: rgba(100,95,115,.8);
+	background-color: rgba(100,95,115,.8);
 }
 header {
 	position: relative;
@@ -43,7 +43,8 @@ h1 {
 	margin-bottom: 2rem;
 }
 a {
-	color: rgba(100,95,115,.8);
+	color: rgba(200,200,215,.8);
+	/*color: rgba(100,95,115,.8);*/
 	text-decoration: none;
 }
 a:hover {
