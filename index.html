@@ -9,6 +9,92 @@
 	</head>
 	<body>
 		<header>
+			<div id="name">Mark<br>Robertson</div>
+			<div class="flashing_red"></div>
+			<div class="flashing_green"></div>
+			<div id="title">Web<br>Developer</div>
+		</header>
+		<div id="portfolio">
+			<div id="project_1" class="portfolio_piece">
+				<div class="project_title">
+					<div class="name_container">
+							<div class="letter">L</div>
+							<div class="letter">I</div>
+							<div class="letter">A</div>
+							<div class="letter">R</div>
+							<div class="letter">S</div>
+							<div class="letter"> </div>
+							<div class="letter">D</div>
+							<div class="letter">I</div>
+							<div class="letter">C</div>
+							<div class="letter">E</div>
+					</div>
+				</div>
+			</div>
+			<div id="project_2" class="portfolio_piece">
+				<div class="project_title">
+					<div class="name_container">
+						<div class="letter">L</div>
+						<div class="letter">I</div>
+						<div class="letter">C</div>
+						<div class="letter">E</div>
+						<div class="letter">N</div>
+						<div class="letter">S</div>
+						<div class="letter">E</div>
+						<div class="letter"></div>
+						<div class="letter">P</div>
+						<div class="letter">L</div>
+						<div class="letter">A</div>
+						<div class="letter">T</div>
+						<div class="letter">E</div>
+						<div class="letter"></div>
+						<div class="letter">G</div>
+						<div class="letter">O</div>
+					</div>
+				</div>
+			</div>
+			<div id="project_3" class="portfolio_piece">
+				<div class="project_title">
+					<div class="name_container">
+						<div class="letter">G</div>
+						<div class="letter">A</div>
+						<div class="letter"></div>
+						<div class="letter">H</div>
+						<div class="letter">U</div>
+						<div class="letter">N</div>
+						<div class="letter">T</div>
+						<div class="letter">E</div>
+						<div class="letter">R</div>
+					</div>
+				</div>
+			</div>
+			<div id="project_4" class="portfolio_piece">
+				<div class="project_title">
+					<div class="name_container">
+						<div class="letter">C</div>
+						<div class="letter">O</div>
+						<div class="letter">U</div>
+						<div class="letter">N</div>
+						<div class="letter">T</div>
+						<div class="letter">R</div>
+						<div class="letter">Y</div>
+						<div class="letter"></div>
+						<div class="letter">C</div>
+						<div class="letter">O</div>
+						<div class="letter">M</div>
+						<div class="letter">P</div>
+						<div class="letter">A</div>
+						<div class="letter">R</div>
+						<div class="letter">I</div>
+						<div class="letter">S</div>
+						<div class="letter">O</div>
+						<div class="letter">N</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- <header>
 			<div id="headerContainer">
 				<div id="name">Mark Robertson</div>
 				<div id="contact"><a href="mailto:markrivasrobertson@yahoo.com">markrivasrobertson<br>@yahoo.com</a></div>
@@ -59,7 +145,34 @@
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat.</div>
-		</aside>
-		<footer><br>&copy; 2016</footer>
+		</aside> -->
+		<footer><br />&copy; 2016</footer>
+		<script>
+			const clickDivs = document.querySelectorAll('.portfolio_piece');
+			clickDivs.forEach((div) => {
+				div.addEventListener('click', () => { toggleClasses(div) });
+			});
+
+			const links = document.querySelectorAll('a');
+			links.forEach((element) => {
+				element.addEventListener('click', (e) => {
+					e.stopPropagation();
+				});
+			});
+			function toggleClasses(div) {
+				const isHighlighted = div.classList.contains('opened') ? true : false;
+				if (isHighlighted) {
+					div.classList.remove('opened');
+				} else {
+					const clickDivs = document.querySelectorAll('.portfolio_piece');
+					clickDivs.forEach((portfolio_piece) => {
+						if (portfolio_piece.classList.contains('opened')) {
+							portfolio_piece.classList.remove('opened');
+						};
+					});
+					div.classList.add('opened')
+				}
+			}
+		</script>
 	</body>
 </html>

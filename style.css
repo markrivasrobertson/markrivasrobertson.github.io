@@ -1,4 +1,121 @@
-body {
+html {
+	font-family: Oswald;
+	background-color: rgba(12,5,40,.8);
+	/*background-color: rgba(100,95,115,.8);*/
+	/*text-align: center;*/
+}
+
+	header {
+		position: relative;
+		margin: 0 auto;
+		width: 1136px;
+		height: 15rem;
+		background-image: url(Jamaica_Bay.jpg);
+		background-size: ;
+		background-position: 0% 48%;
+	}
+		.flashing_green, .flashing_red {
+			display: inline-block;
+			position: absolute;
+			height: 0.25rem;
+			width: 0.25rem;
+			border-radius: 50%;
+		}
+		.flashing_red {
+			background-color: black;
+			margin-top: 12.4rem;
+			margin-left: 26.3rem;
+			animation: flashing_red 5000ms linear infinite;
+		}
+		@keyframes flashing_green {
+			10% {background-color: rgba(0,0,0,1);}
+			28% {background-color: rgba(30,255,30,1);}
+			30% {background-color: rgba(140,255,140,1);}
+			32% {background-color: rgba(30,255,30,1);}
+			50% {background-color: rgba(0,0,0,1);}
+		}
+		.flashing_green {
+			background-color: black;
+			margin-top: 13.4rem;
+			margin-left: 33.75rem;
+			animation: flashing_green 5000ms linear infinite;
+
+		}
+		@keyframes flashing_red {
+			40% {background-color: rgba(0,0,0,1);}
+			58% {background-color: rgba(255,80,80,1);}
+			60% {background-color: rgba(255,140,140,1);}
+			62% {background-color: rgba(255,80,80,1);}
+			80% {background-color: rgba(0,0,0,1);}
+		}
+		#name, #title {
+			margin: 2.5rem;
+			color: rgba(100,95,115,.8);
+			position: relative;
+			display: inline-block;
+		}
+		#name {
+			font-size: 3rem;
+			float: left;
+			text-align: left;
+		}
+		#title {
+			font-size: 2rem;
+			float: right;
+			text-align: right;
+		}
+
+	#portfolio {
+		margin-top: 21rem;
+		height: 21rem;
+	}
+		.portfolio_piece {
+			padding-top: 2em;
+			height: 21rem;
+			width: 6rem;
+			float: left;
+			margin: 0.25rem;
+			border-right: 1px solid rgb(200, 190, 190);
+			border-top: 1px solid rgb(200, 190, 190);
+			border-bottom: 1px solid rgb(200, 190, 190);
+			border-radius: 0 10px 10px 0;
+			/*background-color: gold;*/
+			display: inline-block;
+			-webkit-transition: width 0.75s;
+			transition: width 0.75s;
+		}
+			.name_container {
+				width: 2.5em;
+				height: 20em;
+				margin-left: 1em;
+			}
+				.letter {
+					height: 1.1em;
+					font-family: Oswald;
+				}
+		#project_1 {
+			background-color: rgba(95,95,115,1);
+		}
+		#project_2 {
+			background-color: rgba(85,85,105,1);
+		}
+		#project_3 {
+			background-color: rgba(75,75,90,1);
+		}
+		#project_4 {
+			background-color: rgba(65,65,80,1);
+		}
+		.opened {
+			width: 54rem;
+			-webkit-transition: width 0.75s;
+			transition: width 0.75s;
+		}
+	footer {
+		clear: both;
+		text-align: center;
+	}
+
+/*body {
 	text-align: center;
 	font-family: 'Oswald', sans-serif;
 	color: rgba(200,200,215,.8);
@@ -7,7 +124,7 @@ body {
 }
 header {
 	position: relative;
-	/*background: rgba(0,0,0,.5);*/
+	/*background: rgba(0,0,0,.5);
 	margin: .5em auto;
 	height: 3.5em;
 	width: 95%;
@@ -20,7 +137,7 @@ main {
 	width: 65%;
 	float:left;
 	clear:both;
-	/*background: rgba(0,0,0,.07);*/
+	/*background: rgba(0,0,0,.07);
 	border-radius: 7px;
 	margin: 2rem;
 }
@@ -44,7 +161,7 @@ h1 {
 }
 a {
 	color: rgba(200,200,215,.8);
-	/*color: rgba(100,95,115,.8);*/
+	/*color: rgba(100,95,115,.8);
 	text-decoration: none;
 }
 a:hover {
@@ -110,7 +227,7 @@ aside {
 footer {
 	height: 75px;
 	margin-top: 20px;
-	/*background: rgba(0,0,0,.5);*/
+	/*background: rgba(0,0,0,.5);
 	border-radius: 7px;
 	padding: 15px;
 	clear: both;
@@ -125,7 +242,7 @@ footer {
 	padding: 25px;
 	text-align: right;
 }
-
+*/
 
 
 
