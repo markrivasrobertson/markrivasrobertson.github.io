@@ -17,12 +17,12 @@ html {
 		.flashing_green, .flashing_red {
 			display: inline-block;
 			position: absolute;
+			background-color: black;
 			height: 0.25rem;
 			width: 0.25rem;
 			border-radius: 50%;
 		}
 		.flashing_red {
-			background-color: black;
 			margin-top: 12.4rem;
 			margin-left: 26.3rem;
 			animation: flashing_red 5000ms linear infinite;
@@ -35,7 +35,6 @@ html {
 			50% {background-color: rgba(0,0,0,1);}
 		}
 		.flashing_green {
-			background-color: black;
 			margin-top: 13.4rem;
 			margin-left: 33.75rem;
 			animation: flashing_green 5000ms linear infinite;
