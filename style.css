@@ -4,7 +4,13 @@ html {
 	/*background-color: rgba(100,95,115,.8);*/
 	/*text-align: center;*/
 }
-
+	a {
+		text-decoration: none;
+		color: rgb(200,170,170);
+	}
+	a:hover {
+		font-weight: bold;
+	}
 	header {
 		position: relative;
 		margin: 0 auto;
@@ -69,9 +75,11 @@ html {
 		height: 21rem;
 	}
 		.portfolio_piece {
+			overflow: hidden;
+			position: relative;
 			padding-top: 2em;
 			height: 21rem;
-			width: 6rem;
+			width: 2rem;
 			float: left;
 			margin: 0.25rem;
 			border-right: 1px solid rgb(200, 190, 190);
@@ -83,25 +91,46 @@ html {
 			-webkit-transition: width 0.75s;
 			transition: width 0.75s;
 		}
-			.name_container {
-				width: 2.5em;
-				height: 20em;
-				margin-left: 1em;
+			.project_title {
+				width: 54rem;
+				height: 21rem;
+				margin: 0;
 			}
-				.letter {
-					height: 1.1em;
-					font-family: Oswald;
+				.name_container, .link_container {
+					display: inline-block;
+					position: absolute;
+				}
+				.name_container {
+					width: 2.5em;
+					height: 20em;
+					float: left;
+					margin-left: 0.5em;
+				}
+					.letter {
+						height: 1.1em;
+						font-family: Oswald;
+					}
+				.link_container {
+					display: inline;
+					float: left;
+					margin-left: 45rem;
 				}
 		#project_1 {
-			background-color: rgba(95,95,115,1);
+			background-color: rgba(115,115,135,1);
 		}
 		#project_2 {
-			background-color: rgba(85,85,105,1);
+			background-color: rgba(105,105,125,1);
 		}
 		#project_3 {
-			background-color: rgba(75,75,90,1);
+			background-color: rgba(95,95,110,1);
 		}
 		#project_4 {
+			background-color: rgba(85,85,100,1);
+		}
+		#project_5 {
+			background-color: rgba(75,75,90,1);
+		}
+		#project_6 {
 			background-color: rgba(65,65,80,1);
 		}
 		.opened {
