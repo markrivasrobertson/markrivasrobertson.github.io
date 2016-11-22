@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Mark Robertson - WDI Student</title>
+		<title>Mark Robertson - Web Developer</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link type="text/css" rel="stylesheet" href="reset.css">
 		<link type="text/css" rel="stylesheet" href="style.css">
@@ -30,8 +30,12 @@
 							<div class="letter">E</div>
 					</div>
 					<div class="link_container">
-						<a target="_blank" href="https://github.com/markrivasrobertson/Lo-Mismo">Github<br>Repo</a><br><br>
-						<a target="_blank" href="https://markrivasrobertson.github.io/Lo-Mismo/">Live<br>Version</a>
+						<div class="link">
+							<a target="_blank" href="https://github.com/markrivasrobertson/Lo-Mismo">Github<br>Repo</a>
+						</div>
+						<div class="link">
+							<a target="_blank" href="https://markrivasrobertson.github.io/Lo-Mismo/">Live<br>Version</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -56,7 +60,9 @@
 						<div class="letter">O</div>
 					</div>
 					<div class="link_container">
-						<a target="_blank" href="https://github.com/markrivasrobertson/project_2">Github<br>Repo</a>
+						<div class="link">
+							<a target="_blank"	 href="https://github.com/markrivasrobertson/project_2">Github<br>Repo</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -74,8 +80,12 @@
 						<div class="letter">R</div>
 					</div>
 					<div class="link_container">
-						<a target="_blank" href="https://github.com/markrivasrobertson/shopping_list_app">Github<br>Repo</a><br><br>
-						<a target="_blank" href="http://ga-hunter.herokuapp.com/">Live<br>Version</a>
+						<div class="link">
+							<a target="_blank" href="https://github.com/markrivasrobertson/GA-Hunter">Github<br>Repo</a>
+						</div>
+						<div class="link">
+							<a target="_blank" href="http://ga-hunter.herokuapp.com/">Live<br>Version</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -102,7 +112,9 @@
 						<div class="letter">N</div>
 					</div>
 					<div class="link_container">
-						<a href="#">Github<br>Repo</a>
+						<div class="link">
+							<a target="_blank" href="https://github.com/markrivasrobertson/country_comparison">Github<br>Repo</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -123,7 +135,9 @@
 							<div class="letter">I</div>
 					</div>
 					<div class="link_container">
-						<a target="_blank" href="https://github.com/markrivasrobertson/citibike_api">Github<br>Repo</a>
+						<div class="link">
+							<a target="_blank" href="https://github.com/markrivasrobertson/citibike_api">Github<br>Repo</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -146,69 +160,20 @@
 							<div class="letter">T</div>
 					</div>
 					<div class="link_container">
-						<a target="_blank" href="https://github.com/markrivasrobertson/shopping_list_app">Github<br>Repo</a>
+						<div class="link">
+							<a target="_blank" href="https://github.com/markrivasrobertson/shopping_list_app">Github<br>Repo</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<!-- <header>
-			<div id="headerContainer">
-				<div id="name">Mark Robertson</div>
-				<div id="contact"><a href="mailto:markrivasrobertson@yahoo.com">markrivasrobertson<br>@yahoo.com</a></div>
-			</div>
-		</header>
-		<main>
-			<h1>Junior Web Developer</h1>
-			<div class="dropDown">
-				<span>Skills</span>
-				<div class="dropDownContent">
-					<div>HTML</div>
-					<div>CSS</div>
-					<div>JavaScript</div>
-					<div>Ruby</div>
-				</div>
-			</div>
-			<div class="dropDown">
-				<span>Experience</span>
-				<div class="dropDownContent">
-					<div>Job 1</div>
-					<div>Job 2</div>
-					<div>Job 3</div>
-					<div>Job 4</div>
-				</div>
-			</div>
-			<div class="dropDown">
-				<span>Portfolio</span>
-				<div class="dropDownContent">
-					<div><a href="">App</a></div>
-					<div><a href="">Site</a></div>
-					<div><a href="">Styling</a></div>
-					<div><a href="">'nother ap</a></div>
-				</div>
-			</div>
-			<div class="dropDown">
-				<span>Catch Up With Me</span>
-				<div class="dropDownContent">
-					<div><a href="">LinkedIn</a></div>
-					<div><a href="">Twitter</a></div>
-					<div><a href="mailto:markrivasrobertson@yahoo.com">email</a></div>
-					<div><a href="">other</a></div>
-				</div>
-			</div>
-		</main>
-		<aside>
-			<div id="mugshot"></div>
-			<div id="asideInfo">I mean, really, I do other stuff too... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.</div>
-		</aside> -->
 		<footer><br />&copy; 2016</footer>
 		<script>
 			const clickDivs = document.querySelectorAll('.portfolio_piece');
 			clickDivs.forEach((div) => {
-				div.addEventListener('click', () => { toggleClasses(div) });
+				div.addEventListener('click', () => {
+					toggleClasses(div)
+				});
 			});
 
 			const links = document.querySelectorAll('a');
@@ -217,9 +182,10 @@
 					e.stopPropagation();
 				});
 			});
+
 			function toggleClasses(div) {
-				const isHighlighted = div.classList.contains('opened') ? true : false;
-				if (isHighlighted) {
+				const isOpened = div.classList.contains('opened') ? true : false;
+				if (isOpened) {
 					div.classList.remove('opened');
 				} else {
 					const clickDivs = document.querySelectorAll('.portfolio_piece');
@@ -228,7 +194,7 @@
 							portfolio_piece.classList.remove('opened');
 						};
 					});
-					div.classList.add('opened')
+					div.classList.add('opened');
 				}
 			}
 		</script>
